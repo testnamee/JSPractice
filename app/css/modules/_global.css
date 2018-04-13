@@ -1,0 +1,13 @@
+#container {
+  position: absolute;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../../media/images/background.jpg) no-repeat;
+  height: 748px;
+  background-size: cover;
+}
