@@ -32,7 +32,7 @@ gulp.task('cssInject', ['style'], function() {
 gulp.task('style', function() {
   return gulp
     .src('./app/css/main/main.css')
-    .pipe(postcss([autoprefixer, nested, cssImport, simplevars, mixins]))
+    .pipe(postcss([autoprefixer, cssImport, simplevars, mixins, nested]))
     .on('error', function(errorInfo) {
       console.log(errorInfo.toString());
       this.emit('end');
